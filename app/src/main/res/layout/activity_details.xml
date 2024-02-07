@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/header" />
+            <include
+                layout="@layout/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout android:background="@color/poz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/slika"
+                    android:layout_width="700px"
+                    android:layout_height="700px"
+                    android:scaleType="centerCrop" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="100px">
+
+
+                    <TableRow  android:background="@color/boja">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/naziv"
+                            android:layout_span="2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableRow  android:background="@color/boja"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/opis"
+                            android:layout_span="2" />
+
+                    </TableRow>
+                    <TableRow  android:background="@color/boja"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Sastojci: "
+                            android:layout_span="1" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/sast"
+                            android:layout_span="1" />
+
+                    </TableRow>
+                    <TableRow  android:background="@color/boja"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/cena"
+                            android:layout_span="2"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+
+                </TableLayout>
+                <TableLayout  android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="#00FFFFFF">
+                    <TableRow android:layout_marginTop="60px"
+                        >
+
+                        <TextView
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Unesi kolicinu:"
+                            android:layout_span="1" />
+
+                        <EditText
+                            android:id="@+id/quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:layout_weight="3"
+                            android:background="@color/white" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginLeft="250px">
+
+                        <Button
+                            android:backgroundTint="@color/header_background_color"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:onClick="addOrder"
+                            android:text="Dodaj"
+                            android:gravity="center"
+                            android:layout_span="1" />
+                    </TableRow>
+                    <TableRow android:layout_marginTop="60px"
+                        >
+
+                        <TextView
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Unesi komentar:"
+                            android:layout_span="1" />
+
+                        <EditText
+                            android:id="@+id/comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="1"
+                            android:layout_weight="3"
+                            android:background="@color/white" />
+                    </TableRow>
+                    <TableRow android:layout_marginLeft="250px">
+
+                        <Button
+                            android:backgroundTint="@color/header_background_color"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:onClick="addComm"
+                            android:text="Unesi"
+                            android:gravity="center"
+                            android:layout_span="1" />
+                    </TableRow>
+                </TableLayout>
+
+                <ListView
+                    android:background="#00FFFFFF"
+                    android:id="@+id/commentListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:layout_marginTop="20dp"
+                    android:divider="@color/black"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

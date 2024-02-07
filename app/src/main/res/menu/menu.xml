@@ -1,0 +1,47 @@
+<!-- res/menu/menu_main.xml -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/menu">    <item
+
+        android:id="@+id/promocije"
+        android:title="Promocije"
+    android:iconTint="@color/header_background_color"
+     />
+    <item
+        android:iconTint="@color/header_background_color"
+
+        android:id="@+id/torte"
+        android:title="Torte i kolaci"
+     />
+    <item
+        android:iconTint="@color/header_background_color"
+
+        android:id="@+id/obavestenja"
+        android:title="Obavestenja"
+      />
+    <item
+        android:iconTint="@color/header_background_color"
+
+        android:id="@+id/kontakt"
+        android:title="Kontakt"
+
+       />
+    <item
+        android:iconTint="@color/header_background_color"
+        android:id="@+id/korpa"
+        android:title="Korpa"
+      />
+    <item
+        android:iconTint="@color/header_background_color"
+
+        android:id="@+id/change"
+        android:title="Promena podataka"
+       />
+    <item
+        android:iconTint="@color/header_background_color"
+
+        android:id="@+id/odjava"
+        android:title="Odjava"
+       />
+</menu>

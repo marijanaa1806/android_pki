@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="MenuTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<item name="android:textColorSecondary">@color/white</item>
+</style>
+
+<style name="MenuTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+<item name="android:textColor">@color/white</item>
+    <item name="android:background">@color/header_background_color</item>
+<!-- Add any other text appearance attributes you want to customize -->
+</style>
+</resources>
+
